@@ -1,0 +1,878 @@
+code,
+kbd,
+pre,
+.img-rounded,
+.img-thumbnail,
+/*.img-circle,*/
+.form-control,
+.btn,
+.btn-link,
+.dropdown-menu,
+.list-group-item,
+.input-group-addon,
+.input-group-btn,
+.nav-tabs a,
+.nav-pills a,
+.navbar,
+.navbar-toggle,
+.icon-bar,
+.breadcrumb,
+.pagination,
+.pager *,
+.label,
+.badge,
+.jumbotron,
+.thumbnail,
+.alert,
+.progress,
+.panel,
+.well,
+.modal-content,
+.tooltip-inner,
+.popover,
+.popover-title,
+.carousel-indicators li {
+    border-radius:0 !important;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../font/Kanit/Kanit-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Trirong";
+    src: url("../font/Trirong/Trirong-Regular.ttf") format('truetype');
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    background: #EEEEEE;
+    font-family: 'Kanit', sans-serif;
+}
+
+#page {
+    min-height:100%;
+    position:relative;
+}
+#page-head {
+    padding:10px;
+}
+#page-body {
+    padding-bottom: 40vh;   /* Height of the footer */
+}
+#page-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40vh;   /* Height of the footer */
+    background:#40826D;
+    color: #ffffff;
+}
+
+.footer {
+    background: #40826D;
+}
+
+.container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.navbar {
+    color: #ffffff;
+    background: #40826D;
+    margin-bottom: 200%;
+}
+
+.nav > li > a {
+    color: #FFFFFF;
+}
+
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus {
+    background: #ffffff;
+    color: #40826D;
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+    background: #40826D;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    background: #ffffff;
+    color: #40826D;
+}
+
+.icon-bar {
+    background: #ffffff;
+}
+
+.row {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.row-card{
+    /*padding: 1%;*/
+    background: #ffffff;
+}
+
+.row-card > ol > li {
+    margin: 2% 0 2% 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    margin-top: 30px;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.navbar > .container {
+    margin-top: 0;
+}
+
+.label {
+    letter-spacing: 1px;
+}
+
+.welcome-card {
+    background: #0375b4;
+    padding: 6% 4% 6% 4%;
+}
+
+.welcome-card > .jumbotron {
+    background: #0375b4;
+    padding: 0;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+.panel {
+    margin-top: 0;
+}
+
+.panel-primary > .panel-heading {
+    background: #0375b4;
+    color: #ffffff;
+}
+
+.panel-heading {
+    text-align: center;
+}
+
+.panel-body {
+    padding: 5%;
+}
+
+.panel-footer{
+    text-align: center;
+}
+
+.btn-primary {
+    background: #0375b4;
+}
+
+.teacher-card{
+    border: solid 2px #6fb29b;
+    position: relative;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.teacher-card > .teacher-image {
+    height: 360px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.staff-card {
+    border: solid 1px #6fb29b;
+    position: relative;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.staff-card > .staff-image {
+    height: 360px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-card {
+    position: relative;
+    height: 400px;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #888888;
+    /*border: solid;*/
+}
+
+.blog-card > .card-bg{
+    height: 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+
+.blog-card > .card-caption {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2% 2% 50px 2%;
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.blog-card > .card-action {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3% 2% 1% 2%;
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.file-card {
+    position: relative;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.file-card > .card-bg{
+    height: 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+
+.file-card > .card-caption {
+    padding: 3%;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.image-card {
+    border: #6fb29b solid 1px;
+    position: relative;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.image-card > .card-bg{
+    height: 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+
+.image-card > .card-caption {
+    border: #6fb29b solid 1px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.curricula-card {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 240px;
+    border-radius: 0;
+    box-shadow: 1px 1px 5px #888888;
+    color: #FFFFFF;
+}
+
+.curricula-card > .curricula-content > a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.curricula-card > .curricula-content{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+.document-card {
+    color: #FFFFFF;
+    height: 200px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.document-card > .document-content{
+    padding: 15px;
+    background: rgba(130, 109, 64, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+.label-secondary {
+    background: rgba(109,64,130,0.7);
+    /*letter-spacing: 1px;*/
+}
+
+.research-card {
+    background: rgba(130, 109, 64, 0.5);
+    background-image: url('../image/SC-SU-Formal-TH_resize.png');
+    background-position:top right;
+    background-repeat:no-repeat;
+    background-size: 45%;
+    height: 350px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.research-card > .research-content > a {
+    padding: 30px 15px 30px 30px;
+    height: 100%;
+    color: #ffffff;
+}
+
+.research-card > .research-action {
+    bottom: 0;
+    padding: 1%;
+}
+
+.address-card {
+    padding: 1%;
+}
+
+.address-card > .address-content {
+    box-shadow: 1px 1px 5px #888888;
+    padding: 15px 20px 15px 20px;
+}
+
+.summary-card {
+    box-shadow: 1px 1px 5px #888888;
+    background: rgba(130, 109, 64, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    height: 320px;
+}
+
+.summary-card > h2 > a {
+    color: #FFFFFF;
+}
+
+.summary-card > h2 > .btn {
+    color: #000000;
+}
+
+.summary-card-small {
+    box-shadow: 1px 1px 5px #888888;
+    background: rgba(130, 76, 64, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    height: 200px;
+}
+
+.summary-card-small > h2 > a {
+    color: #FFFFFF;
+}
+
+.summary-card-small > h2 > .btn {
+    color: #000000;
+}
+
+.form-card {
+    box-shadow: 1px 1px 5px #888888;
+    background: rgba(109,64,130,0.7);
+    color: #ffffff;
+    padding: 10px;
+    height: auto;
+}
+
+.form-card > ol > li > a {
+    color: #FFFFFF;
+}
+
+.chart {
+    width: 100%;
+    min-height: 200px;
+}
+
+h2 > span {
+    color: #0f0f0f;
+    letter-spacing: -1px;
+}
+
+p > span {
+    color: #0f0f0f;
+    letter-spacing: -1px;
+}
+
+.carousel {
+    height: auto;
+    width: 100%;
+}
+
+.carousel-inner {
+    padding: 0;
+    margin: 0;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.item {
+    background-position:center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 80vh;
+    max-width: none;
+}
+
+.item > svg {
+    position: fixed;
+    top: 10%;
+    height: 60%;
+    left: 20%;
+    width: 60%;
+}
+
+.carousel-caption {
+    left: 0;
+    height: 25%;
+    width: 100%;
+    padding-top: 2%;
+    top: 75%;
+    background: rgba(255, 255, 255, 0.7);
+    color: #0f0f0f;
+}
+
+.carousel-indicators {
+    bottom: 0;
+    margin-bottom: 1%;
+}
+
+.first {
+    /*background: rgba(64,130,109,0.6);*/
+    background: rgba(130,76,64,0.7);
+    /*background: rgba(130,109,64,0.6);*/
+}
+
+.second {
+    background: rgba(130,109,64,0.5);
+}
+
+.second .back {
+    display: none;
+    transform: scale(0);
+}
+
+.second .info {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.some-space {
+    padding-top: 1%;
+}
+
+.google-maps {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 1%;
+}
+
+.google-maps > iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 2px #888888;
+}
+
+.center-cropped {
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar {
+    padding-top: 2%;
+    background: #CFD8DC;
+    height: 100%;
+}
+
+.content-card {
+    background: #CFD8DC;
+    padding: 1%;
+}
+
+.footer {
+    text-align: left;
+}
+
+.footer > p > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.well {
+    padding: 0 0 0 1%;
+    background: #40826D;
+    color: #ffffff;
+}
+
+.welcome-li {
+    margin: 2%;
+    font-size: 25px;
+}
+
+.black-ribbon {
+    position: fixed;
+    z-index: 9999;
+    width: 70px;
+}
+
+@media only all and (min-width: 768px) {
+    .black-ribbon {
+        width: auto;
+    }
+}
+
+.stick-left { left: 0; }
+.stick-right { right: 0; }
+.stick-top { top: 0; }
+.stick-bottom { bottom: 0; }
+
+.bg-primary {
+    background: #D98F4F;
+}
+
+.map-col {
+    padding: 0 5% 5% 5%
+}
+
+.map-list {
+    margin-bottom: 8%
+}
+
+.map-list > li {
+    margin-bottom: 5%;
+}
+
+.pagination > .active > span {
+    background-color: #40826D;
+    border-color: #40826D;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #40826D;
+    border-color: #40826D;
+}
+
+.pagination > li > a{
+    color: #40826D;
+}
+
+.paragraph {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+
+a > .label-success {
+    font-size: 14px;
+    background: #6fb29b;
+}
+
+.primary-section-heading {
+    margin: 10px;
+    padding: 2%;
+    text-align: left;
+    box-shadow: 1px 1px 5px #888888;
+    background: #6fb29b;
+    color: #ffffff;
+}
+
+.secondary-section-heading {
+    margin: 10px;
+    padding: 2%;
+    text-align: left;
+    box-shadow: 1px 1px 5px #888888;
+    background: rgba(130,109,64,0.7);
+    color: #ffffff;
+}
+
+.btn-success{
+    background: #40826D;
+    border-color: #40826D;
+}
+
+.btn-success:hover {
+    background: #0b5542;
+    border-color: #0b5542;
+}
+
+.btn-success:focus {
+    background: #0b5542;
+    border-color: #0b5542;
+}
+
+#goTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    /*outline: none;*/
+    background-color: rgba(109,64,130,0.8);
+    color: white;
+    /*cursor: pointer;*/
+    padding: 15px;
+    border-radius: 45%;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+#goTopBtn:hover {
+    background-color: rgba(79,39,71,0.8);
+}
+
+.profile-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border: #40826D 2px solid;
+}
+
+.profile-content {
+    padding: 0 16px;
+}
+
+.profile-card > .profile-content > .title {
+    color: grey;
+    font-size: 18px;
+}
+
+.modal {
+    color: #000000;
+    text-align: left;
+}
+
+.category-card {
+    color: #FFFFFF;
+    height: 250px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.category-card > .category-content{
+    padding: 15px;
+    background: rgba(130, 109, 64, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .curricula-card {
+        height: 240px;
+    }
+
+    .research-card {
+        background-size: 60%;
+        height: 300px;
+    }
+
+    .document-card {
+        height: 240px;
+    }
+
+    /*.document-card > .document-content{
+        padding: 10px;
+    }*/
+
+    .item {
+        height: 50vh;
+        max-width: none;
+    }
+
+    .carousel-caption {
+        padding-top: 0;
+        /*opacity: 0;*/
+    }
+
+    .center-cropped {
+        height: 40vh;
+    }
+
+    .google-maps {
+        height: 40vh;
+        padding: 1.5%;
+    }
+
+    .address-card {
+        padding: 1.5%;
+    }
+
+    #goTopBtn {
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: -20px;
+        margin-left: -8px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .row {
+        margin: 5px 0 5px 0;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .curricula-card {
+        height: 270px;
+    }
+
+    .research-card {
+        background-size: 250%;
+        height: 320px;
+    }
+
+    .research-card > .research-content > a {
+        padding: 10px 15px 0 15px;
+    }
+
+    .document-card {
+        height: 230px;
+    }
+
+    .document-card > .document-content{
+        padding: 5px;
+    }
+
+    .item {
+        height: 60vh;
+        max-width: none;
+    }
+
+    .center-cropped {
+        height: 30vh;
+    }
+
+    .carousel-caption {
+        padding-top: 0;
+        height: 30%;
+        z-index: 25;
+        /*opacity: 0;*/
+    }
+
+    .google-maps {
+        height: 50vh;
+        padding: 3%;
+    }
+
+    .address-card {
+        padding: 3%;
+    }
+
+    #goTopBtn {
+        padding: 10px;
+    }
+}
+
+
+/*
+rgba(217, 143, 79, 0.7)
+*/

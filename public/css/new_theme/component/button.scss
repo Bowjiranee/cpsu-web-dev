@@ -1,0 +1,76 @@
+.button-next, .button-previous{
+
+  background-color: $color-light-gray;
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+  }
+
+  @media screen and (min-width: $device-tablet) {
+    width: 28px;
+    height: 28px;
+  }
+  @media screen and (min-width: $device-computer) {
+
+  }
+}
+
+.btn-square{
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  @media screen and (min-width: $device-tablet) {
+    padding: 20px;
+  }
+  @media screen and (min-width: $device-computer) {
+
+  }
+}
+.btn-share-facebook{
+  background-color: $color-facebook;
+  color: $color-white;
+  font-size: $font-small-description-mobile;
+  @media screen and (min-width: $device-tablet) {
+    font-size: $font-small-description-tablet-computer
+  }
+  @media screen and (min-width: $device-computer) {
+
+  }
+}
+.btn-share-twitter{
+  background-color: $color-twiiter;
+  color: $color-white;
+  font-size: $font-small-description-mobile;
+  @media screen and (min-width: $device-tablet) {
+    font-size: $font-small-description-tablet-computer
+  }
+  @media screen and (min-width: $device-computer) {
+
+  }
+}
+
+.btn-go-top{
+
+  width: 40px;
+  z-index: 2;
+  height: 40px;
+  display: none;
+  background-color: $color-green;
+  border: none;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  cursor: pointer;
+
+  &:focus{
+    outline: none;
+  }
+  @media screen and (min-width: $device-tablet) {
+    bottom: 80px;
+  }
+  @media screen and (min-width: $device-computer) {
+
+  }
+}
